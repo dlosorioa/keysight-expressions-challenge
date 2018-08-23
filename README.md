@@ -12,10 +12,9 @@ https://caniuse.com/dragndrop
 
 
 ## Array of expressions functions
+Define the list of expressions in src/expressions.ts file.
 
-Define expressions in index.html file.
-
-Given there was not certinty where the functions would come from, I decided to leave them in the index to show how they were not deppendant on angular or any other component.
+The list was moved into this file to have the list defined into angular scope, mainly for unit tests purposes.
 
 
 # Setup
