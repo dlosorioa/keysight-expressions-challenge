@@ -1,0 +1,6 @@
+<div *ngIf="operator" class="operator item-{{ operator.type }}" draggable="true">
+  <div class="row">
+    <div class="col header"><label><div>{{ operator.name }}</div><div class="result-total">({{operator.total}})</div></label></div>
+    <app-container *ngFor='let param of params' class="col" [data]="param" (update)="onUpdate()"></app-container>
+  </div>
+</div>

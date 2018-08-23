@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 
+import { OperatorsListService } from './operators-list.service';
+import { Operator } from './operator';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +10,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'expression';
+  total = {
+    value: 0
+  };
+  options = {
+    results: true,
+    theme: false
+  };
+
+  constructor(public operatorsService: OperatorsListService) { }
 }

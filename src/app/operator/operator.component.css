@@ -1,0 +1,86 @@
+.row {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  display: inline-flex;
+  flex: 1 1 auto;
+  margin: 5px;
+  min-width: 100px;
+}
+
+.operator {
+  position: relative;
+  width: 100%;
+}
+
+.col.header {
+  padding: 20px;
+  flex: 0 0 auto;
+  min-width: 0;
+  border: 1px solid black;
+  align-items: center;
+  min-width: auto;
+  text-align: center;
+}
+
+label .result-total {
+  font-size: 0.8rem;
+  margin-top: 10px;
+}
+
+.operator:hover > .row {
+  background: rgba(50, 150, 150, 0.1);
+}
+
+/** Results mode: On; **/
+:host-context(.show-results) .col:not(.header) {
+  min-width: 170px;
+}
+
+:host-context(.show-results):host-context(.show-theme) .col:not(.header) {
+  min-width: 240px;
+}
+
+/** Styling theme mode: On; **/
+:host-context(.show-theme) label {
+  color: white;
+}
+
+:host-context(.show-theme) .col {
+  border-color: white;
+  border-radius: 5px;
+}
+:host-context(.show-theme) .row {
+  border: none;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+:host-context(.show-theme) .header {
+  border: 1px solid white;
+}
+
+:host-context(.show-theme) .item-0 > label { background-color: hsla(00, 50%, 45%, 0.8); }
+:host-context(.show-theme) .item-1 > label { background-color: hsla(40, 50%, 45%, 0.8); }
+:host-context(.show-theme) .item-2 > label { background-color: hsla(80, 50%, 45%, 0.8); }
+:host-context(.show-theme) .item-3 > label { background-color: hsla(120, 50%, 45%, 0.8); }
+:host-context(.show-theme) .item-4 > label { background-color: hsla(160, 50%, 45%, 0.8); }
+:host-context(.show-theme) .item-5 > label { background-color: hsla(200, 50%, 45%, 0.8); }
+:host-context(.show-theme) .item-6 > label { background-color: hsla(240, 50%, 45%, 0.8); }
+:host-context(.show-theme) .item-7 > label { background-color: hsla(270, 50%, 45%, 0.8); }
+:host-context(.show-theme) .item-8 > label { background-color: hsla(300, 50%, 45%, 0.8); }
+:host-context(.show-theme) .item-9 > label { background-color: hsla(330, 50%, 45%, 0.8); }
+
+:host-context(.show-theme) .item-0 > .row { background-color: hsla(00, 50%, 45%, 0.8); }
+:host-context(.show-theme) .item-1 > .row { background-color: hsla(40, 50%, 45%, 0.8); }
+:host-context(.show-theme) .item-2 > .row { background-color: hsla(80, 50%, 45%, 0.8); }
+:host-context(.show-theme) .item-3 > .row { background-color: hsla(120, 50%, 45%, 0.8); }
+:host-context(.show-theme) .item-4 > .row { background-color: hsla(160, 50%, 45%, 0.8); }
+:host-context(.show-theme) .item-5 > .row { background-color: hsla(200, 50%, 45%, 0.8); }
+:host-context(.show-theme) .item-6 > .row { background-color: hsla(240, 50%, 45%, 0.8); }
+:host-context(.show-theme) .item-7 > .row { background-color: hsla(270, 50%, 45%, 0.8); }
+:host-context(.show-theme) .item-8 > .row { background-color: hsla(300, 50%, 45%, 0.8); }
+:host-context(.show-theme) .item-9 > .row { background-color: hsla(330, 50%, 45%, 0.8); }

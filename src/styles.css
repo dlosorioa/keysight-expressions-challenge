@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+/* Overrides for specific styles for results and theme mode */
+section:not(.show-results) .result-total {
+  display: none;
+}
+
+section:not(.show-results) input {
+  display: none;
+}
+
+section:not(.show-results) .drop-container {
+  min-height: 50px;
+}
+
+.show-theme .first-container > .drop-container {
+  background-color: rgba(0,0,0,0.2);
+  border: none;
+  border-radius: 20px;
+}
+
+.show-theme .first-container > .drop-container.initialized:not(.dragging) {
+  background-color: transparent;
+}

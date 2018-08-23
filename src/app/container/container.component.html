@@ -1,0 +1,7 @@
+<div class="drop-container" [class.dragging]="dragging" [class.initialized]="operator">
+  <div class="dropzone"></div>
+  <app-operator *ngIf="operator; else elseBlock" (update)="onUpdate()" (remove)="onRemove()" [data]="data" [operator]="operator"></app-operator>
+  <ng-template #elseBlock>
+    <input [(ngModel)]="data.value" (ngModelChange)="onChange()">
+  </ng-template>
+</div>

@@ -1,0 +1,25 @@
+.operator-item {
+  border: 1px solid black;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 5px;
+  padding: 10px 20px;
+}
+
+/** Styling theme mode: On; **/
+:host-context(.show-theme) .operator-item {
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+
+:host-context(.show-theme) .item-0 { background-color: hsla(00, 50%, 45%, 1); }
+:host-context(.show-theme) .item-1 { background-color: hsla(40, 50%, 45%, 1); }
+:host-context(.show-theme) .item-2 { background-color: hsla(80, 50%, 45%, 1); }
+:host-context(.show-theme) .item-3 { background-color: hsla(120, 50%, 45%, 1); }
+:host-context(.show-theme) .item-4 { background-color: hsla(160, 50%, 45%, 1); }
+:host-context(.show-theme) .item-5 { background-color: hsla(200, 50%, 45%, 1); }
+:host-context(.show-theme) .item-6 { background-color: hsla(240, 50%, 45%, 1); }
+:host-context(.show-theme) .item-7 { background-color: hsla(270, 50%, 45%, 1); }
+:host-context(.show-theme) .item-8 { background-color: hsla(300, 50%, 45%, 1); }
+:host-context(.show-theme) .item-9 { background-color: hsla(330, 50%, 45%, 1); }

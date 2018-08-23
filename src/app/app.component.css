@@ -1,0 +1,36 @@
+/** App level styling **/
+.operators-list {
+  display: block;
+  text-align: center;
+}
+.operators-list li {
+  display: inline-block;
+}
+
+.options {
+  text-align: center;
+}
+.options button{
+  cursor: pointer;
+  margin: 10px;
+  padding: 10px;
+}
+
+.show-results .btn-results {
+  background: navy;
+  border-color: navy;
+  color: white;
+}
+.show-theme .btn-theme {
+  background: navy;
+  border-color: navy;
+  color: white;
+}
+
+.main-container > ::ng-deep .drop-container {
+  min-height: 100px;
+}
+
+.result-total {
+  text-align: center;
+}

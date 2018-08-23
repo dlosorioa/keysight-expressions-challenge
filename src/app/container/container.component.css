@@ -1,0 +1,70 @@
+.drop-container {
+  border: 1px solid black;
+  box-sizing: border-box;
+  padding: 20px;
+  position: relative;
+  width: 100%;
+}
+
+.drop-container:not(.dragging) .drop-container:hover {
+  background: rgba(50, 50, 150, 0.05);
+}
+
+.drop-container.dragging {
+  background-color: navy;
+  box-sizing: border-box;
+  opacity: 0.3;
+}
+
+/** Drop zone **/
+.dropzone {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.drop-container.dragging .dropzone {
+  display: block;
+  z-index: 1;
+}
+
+.drop-container.dragging input {
+  z-index: 0;
+}
+
+input {
+  height: 100%;
+  max-height: 50px;
+  width: 100%;
+  max-width: 50rem;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 2;
+}
+
+/** Styling theme mode: On; **/
+:host-context(.show-theme) input {
+  background-color: rgba(255,255,255,0.8);
+  border: none;
+  min-height: 20px;
+}
+
+.drop-container {
+  display: flex;
+  align-items: center;
+}
+app-operator {
+    width: 100%;
+}
+
+:host-context(.show-theme) .drop-container {
+  border-color: rgba(255,255,255,0.4);
+}
+
+:host-context(.show-theme) .drop-container:not(.dragging) .drop-container:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
