@@ -14,7 +14,7 @@ export class AppComponent {
     value: 0
   };
   options = {
-    results: true,
+    results: false,
     theme: false
   };
 
