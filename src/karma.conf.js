@@ -26,9 +26,6 @@ module.exports = function (config) {
     logLevel: config.LOG_INFO,
     autoWatch: true,
     browsers: ['Chrome'],
-    singleRun: false,
-    files: [
-      'app/expressions.js'
-    ],
+    singleRun: false
   });
 };

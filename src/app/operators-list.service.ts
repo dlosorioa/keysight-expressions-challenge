@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Operator } from './operator';
-import { expressions_list } from './expressions';
+import { expressions_list } from '../expressions';
 
 @Injectable({
   providedIn: 'root'

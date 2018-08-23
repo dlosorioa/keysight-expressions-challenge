@@ -4,7 +4,7 @@ import { OperatorComponent } from './operator/operator.component';
 import { ContainerComponent } from './container/container.component';
 import { OperatorControlComponent } from './operator-control/operator-control.component';
 import { FormsModule } from '@angular/forms';
-import { expressions_list } from './expressions';
+import { expressions_list } from '../expressions';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
