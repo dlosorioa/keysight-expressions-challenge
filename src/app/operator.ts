@@ -6,7 +6,7 @@ export class Operator {
   params: any[] = [];
   total: number = 0;
 
-  constructor(public type: number, public callback: Type<any>) {
+  constructor(public type: number, public callback: any) {
     this.name = callback.name;
     for(let i = 0; i < callback.length; i++) {
       this.params.push({i:i, value: 0});

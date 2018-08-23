@@ -23,6 +23,11 @@ Given there was not certinty where the functions would come from, I decided to l
 ## Requirements
 Verify that you are running at least Node.js version 8.x or greater and npm version 5.x or greater
 
+In a terminal window, run `npm -v` and run `node -v` to confirm this
+
+## Install dependencies
+Run `npm install` 
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

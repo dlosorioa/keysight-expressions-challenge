@@ -6,13 +6,14 @@ import { ContainerComponent } from './container.component';
 import { OperatorComponent } from '../operator/operator.component';
 import { Operator } from '../operator';
 
-function operatorCallback(x, y, z) {
-
-}
-
 describe('ContainerComponent', () => {
   let component: ContainerComponent;
   let fixture: ComponentFixture<ContainerComponent>;
+
+  function operatorCallback(x, y, z) {
+    return x + y + z;
+  }
+
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
